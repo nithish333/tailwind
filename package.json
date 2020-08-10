@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "tailwindcss": "^1.6.2"
+    "tailwindcss": "^1.6.2",
+    "tailwindcss-text-indent": "^1.0.2"
   }
 }
