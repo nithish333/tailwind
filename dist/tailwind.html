@@ -4,296 +4,102 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="tailwind.css" />
-    <title>BOOTCAMP</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
-      crossorigin="anonymous"
-    />
+    <title>Bootcamp</title>
   </head>
-  <body class="font-body m-0 p-0 box-border w-screen overflow-x-hidden">
-    <div class="text-gray-700 bg-white">
-      <div>
-        <nav
-          class="bg-white flex justify-between p-6 items-center ml-12 mr-12 border-gray-100 border-b-2"
-        >
-          <h2 class="text-4xl uppercase ml-12 tracking-wider font-semibold">
-            Bootcamp
-          </h2>
-          <ul class="flex font-semibold text-lg tracking-wider">
-            <li class="mr-12">
+  <body class="font-body">
+    <div>
+      <nav class="md:flex md:justify-between border-b-2 border-gray-200 pb-2">
+        <div class="flex justify-between m-4 items-center">
+          <h2 class="uppercase text-2xl">Bootcamp</h2>
+          <div class="md:hidden" id="icon">
+            <svg
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              class="menu-alt1 w-6 h-6"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <div>
+          <ul class="text-center pt-4 hidden md:flex md:flex-row" id="menu">
+            <li class="mt-2 md:mr-12">
               <a href="#"><span>Home</span></a>
             </li>
-            <li class="mr-12">
+            <li class="mt-2 md:mr-12">
               <a href="#"><span>About</span></a>
             </li>
-
-            <li class="mr-12">
+            <li class="mt-2 md:mr-12">
               <a href="#"><span>Services</span></a>
             </li>
-            <li class="mr-12">
+            <li class="mt-2 md:mr-12">
               <a href="#"><span>Contact</span></a>
             </li>
           </ul>
-        </nav>
-        <main>
-          <div
-            class="flex justify-around bg-right-top bg-no-repeat"
-            style="background-image: url(./assets/bg.png);"
-          >
-            <div>
-              <h1 class="text-6xl mt-12">
-                We'll help you to build <br />your
-                <span class="text-green-500">journey</span>
-                the<br />way you dream of.
-              </h1>
-              <p class="mt-8 text-xl">
-                Join with over 5+ million students in acheiving their dreams
-              </p>
-              <div class="mt-16">
-                <a
-                  href="#hireus"
-                  class="bg-green-500 px-4 py-2 rounded text-lg cursor-pointer text-white hover:bg-green-600"
-                  >Hire us</a
-                >
-                <a
-                  href="#whychoose"
-                  class="ml-10 bg-primary-100 text-lg cursor-pointer px-4 py-2 text-secondary-100 rounded hover:bg-green-100 hover:text-green-500"
-                  >Why choose us?</a
-                >
-              </div>
-            </div>
-            <div>
-              <img
-                src="assets/icons8-team-FcLyt7lW5wg-unsplash-removebg-preview.png"
-                alt="girlImage"
-              />
-            </div>
-          </div>
-          <!-- 10 years experience -->
+        </div>
+      </nav>
+      <main>
+        <div class="md:flex">
           <div>
-            <h2 class="text-gray-800 text-4xl text-center mt-20 font-light">
-              Over 10+ years of teaching experience in Learning Science and
-              <br />
-              Curriculum Refinement
+            <h2 class="text-3xl mt-10 text-center">
+              We'll help you to build <br />your
+              <span class="text-green-500">journey</span>
+              the<br />way you dream of.
             </h2>
-            <!-- numbers and data -->
-            <div class="flex mt-20 justify-evenly">
-              <div
-                class="text-2xl flex justify-center flex-col border-r-2 border-gray-200 px-32"
+            <p class="p-4 text-center">
+              Join with over 5+ million students in acheiving their dream
+            </p>
+            <!-- Starting buttons -->
+            <div class="flex justify-evenly mt-5">
+              <a href="#" class="bg-green-500 text-gray-100 py-2 px-4 rounded"
+                >Hire us</a
               >
-                <div class="">
-                  <h2 class="font-bold text-gray-800">Campuses</h2>
-                  <p>1000+</p>
-                </div>
-                <div class="mt-10">
-                  <h2 class="font-bold text-gray-800">Students</h2>
-                  <p>5 Million+</p>
-                </div>
-                <div class="mt-10">
-                  <h2 class="font-bold text-gray-800">Allumni</h2>
-                  <p>6768</p>
-                </div>
-              </div>
-              <!-- numbers completed -->
-              <div class="flex flex-col justify-center text-justify">
-                <p class="text-xl tracking-wider">
-                  We strive for teaching our students the most up-to-date<br />
-                  programming technologies through effective methods. Our
-                  dynamic<br />
-                  curriculum has been refined and optimized over the last ten
-                  years<br />
-                  by our founding members-a team of seasoned software developers
-                  and<br />
-                  tech executives.
-                </p>
-
-                <div class="mt-10 self-start">
-                  <a
-                    href="#"
-                    class="bg-primary-100 text-lg cursor-pointer px-4 py-2 text-secondary-100 rounded-lg hover:bg-green-100 hover:text-green-500"
-                    >Learn more</a
-                  >
-                </div>
-              </div>
+              <a
+                href="#"
+                class="bg-primary-100 text-secondary-100 py-2 px-4 rounded"
+                >Why choose us?</a
+              >
             </div>
           </div>
-
-          <!-- Offline and online -->
-          <!-- div1 online bootcamp-->
+          <!-- woman image -->
+          <div class="flex justify-center">
+            <img
+              src="assets/icons8-team-FcLyt7lW5wg-unsplash-removebg-preview.png"
+              alt="womanImage"
+              id="woman"
+              class="h-0 md:h-full"
+            />
+          </div>
+        </div>
+        <!-- 10 years experience -->
+        <div>
+          <h2 class="mt-10 text-lg p-4 text-center">
+            Over 10+ years of teaching experience in Learning Science and
+            Curriculum Refinement
+          </h2>
           <div>
-            <h2 class="text-gray-800 text-4xl text-center mt-40 font-light">
-              Join our all new Onsite and Online
-              <span class="border-b-4 border-green-400 py-2">coding</span>
-              bootcamps
-            </h2>
-            <div class="flex mt-20 justify-evenly w-screen items-center">
+            <div class="flex p-4 justify-evenly">
               <div>
-                <img
-                  src="assets/online_bootcamp_splash.jpg"
-                  alt="online coding bootcamp"
-                  class="h-full w-full justify-end"
-                />
+                <h2 class="text-gray-900 text-xl font-bold">Campuses</h2>
+                <p>1000+</p>
               </div>
               <div>
-                <h2 class="text-gray-800 text-4xl font-semibold pl-4">
-                  Online Coding Bootcamp
-                </h2>
-                <p class="indent-12 mt-12">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br />
-                  Temporibus maxime quae amet ducimus nam fugit ipsa, quis<br />
-                  tempore necessitatibus vel laborum, recusandae obcaecati!<br />
-                  Consequatur sed non quo atque vel sint harum veritatis
-                  rerum<br />
-                </p>
-                <p class="indent-12 mt-4">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br />
-                  Temporibus maxime quae amet ducimus nam fugit ipsa, quis<br />
-                  tempore necessitatibus vel laborum, recusandae obcaecati!<br />
-                  Consequatur sed non quo atque vel sint harum veritatis
-                  rerum<br />
-                </p>
-                <div class="mt-10">
-                  <a
-                    href="#"
-                    class="bg-primary-100 text-lg cursor-pointer px-4 py-2 text-secondary-100 rounded-lg hover:bg-green-100 hover:text-green-500"
-                    >View details</a
-                  >
-                </div>
+                <h2 class="text-gray-900 text-xl font-bold">Students</h2>
+                <p>5 Million+</p>
+              </div>
+              <div>
+                <h2 class="text-gray-900 text-xl font-bold">Alumni</h2>
+                <p>4562</p>
               </div>
             </div>
           </div>
-          <!-- div2 offline bootcamp -->
-          <div class="flex mt-20 justify-evenly w-screen items-center">
-            <div>
-              <h2 class="text-gray-800 text-4xl font-semibold pl-4">
-                Onsite Coding Bootcamp
-              </h2>
-              <p class="indent-12 mt-12">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br />
-                Temporibus maxime quae amet ducimus nam fugit ipsa, quis<br />
-                tempore necessitatibus vel laborum, recusandae obcaecati!<br />
-                Consequatur sed non quo atque vel sint harum veritatis rerum<br />
-              </p>
-              <p class="indent-12 mt-4">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br />
-                Temporibus maxime quae amet ducimus nam fugit ipsa, quis<br />
-                tempore necessitatibus vel laborum, recusandae obcaecati!<br />
-                Consequatur sed non quo atque vel sint harum veritatis rerum<br />
-              </p>
-              <div class="mt-10">
-                <a
-                  href="#"
-                  class="bg-primary-100 text-lg cursor-pointer px-4 py-2 text-secondary-100 rounded-lg hover:bg-green-100 hover:text-green-500"
-                  >View details</a
-                >
-              </div>
-            </div>
-            <div>
-              <img
-                src="assets/onsite-bootcamp-splash.jpg"
-                alt="online coding bootcamp"
-                class="h-full w-full justify-end"
-              />
-            </div>
-          </div>
-          <!-- offline bootcamp completed -->
-
-          <!-- Students working -->
-          <div class="h-50vh bg-black mt-12">
-            <div class="h-auto p-12 flex flex-col justify-center items-center">
-              <h2 class="text-white text-4xl text-center mt-40 font-semibold">
-                Our students working in the top companies like
-              </h2>
-              <img src="assets/companies.png" alt="companies" />
-            </div>
-          </div>
-          <!-- Word from our students -->
-          <div class="mt-40">
-            <h2 class="text-gray-800 text-4xl text-center font-light">
-              A word from our
-              <span class="border-b-4 border-green-400 py-1">Students</span>
-            </h2>
-            <div class="grid grid-cols-3 m-12 gap-12">
-              <!-- Person1 -->
-              <div
-                class="border-gray-200 border-2 p-10 shadow-lg hover:shadow-2xl"
-              >
-                <p class="text-gray-900 font-bold text-2xl">Andrew Negi</p>
-                <p class="text-gray-500 pt-2">Software Developer, Google</p>
-                <br />
-
-                <img
-                  src="assets/p-1.png"
-                  alt="person"
-                  class="rounded-full"
-                /><br />
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
-                  Doloremque, fuga iure! Aliquid deleniti sint sequi nemo
-                  numquam<br />
-                  veritatis blanditiis accusantium laboriosam harum, quo
-                  commodi<br />
-                  natus et saepe repellendus facilis sapiente.<br />
-                </p>
-                <p class="text-secondary-100 text-4xl mt-2">
-                  <i class="fa fa-quote-right" aria-hidden="true"></i>
-                </p>
-              </div>
-              <!-- Person 2 -->
-              <div
-                class="border-gray-200 border-2 p-10 shadow-lg hover:shadow-2xl"
-              >
-                <p class="text-gray-900 font-bold text-2xl">Gwen Tennyson</p>
-                <p class="text-gray-500 pt-2">Software Developer, Cisco</p>
-                <br />
-
-                <img
-                  src="assets/p-2.png"
-                  alt="person"
-                  class="rounded-full"
-                /><br />
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
-                  Doloremque, fuga iure! Aliquid deleniti sint sequi nemo
-                  numquam<br />
-                  veritatis blanditiis accusantium laboriosam harum, quo
-                  commodi<br />
-                  natus et saepe repellendus facilis sapiente.<br />
-                </p>
-                <p class="text-secondary-100 text-4xl mt-2">
-                  <i class="fa fa-quote-right" aria-hidden="true"></i>
-                </p>
-              </div>
-              <div
-                class="border-gray-200 border-2 p-10 shadow-lg hover:shadow-2xl"
-              >
-                <p class="text-gray-900 font-bold text-2xl">Ran Segall</p>
-                <p class="text-gray-500 pt-2">Software Developer, Paypal</p>
-                <br />
-
-                <img
-                  src="assets/p-3.png"
-                  alt="person"
-                  class="rounded-full"
-                /><br />
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
-                  Doloremque, fuga iure! Aliquid deleniti sint sequi nemo
-                  numquam<br />
-                  veritatis blanditiis accusantium laboriosam harum, quo
-                  commodi<br />
-                  natus et saepe repellendus facilis sapiente.<br />
-                </p>
-                <p class="text-secondary-100 text-4xl mt-2">
-                  <i class="fa fa-quote-right" aria-hidden="true"></i>
-                </p>
-              </div>
-            </div>
-          </div>
-        </main>
-      </div>
+        </div>
+      </main>
     </div>
+    <script src="tailwindJS.js"></script>
   </body>
 </html>
