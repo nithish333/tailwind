@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="tailwind.css" />
     <title>Bootcamp</title>
   </head>
-  <body class="font-body">
+  <body class="font-body m-0 p-0 box-border w-screen overflow-x-hidden">
     <div>
       <nav class="md:flex md:justify-between border-b-2 border-gray-200 pb-2">
         <div class="flex justify-between m-4 items-center">
@@ -43,24 +43,30 @@
         </div>
       </nav>
       <main>
-        <div class="md:flex">
+        <div
+          class="md:flex md:items-center md:justify-around lg:bg-right-top lg:bg-no-repeat"
+        >
           <div>
-            <h2 class="text-3xl mt-10 text-center text-gray-900">
+            <h2
+              class="text-3xl mt-10 text-center text-gray-900 lg:text-6xl lg:text-justify"
+            >
               We'll help you to build <br />your
               <span class="text-green-500">journey</span>
               the<br />way you dream of.
             </h2>
-            <p class="p-4 text-center">
+            <p class="p-4 text-center lg:text-xl lg:mt-4 lg:mr-24">
               Join with over 5+ million students in acheiving their dream
             </p>
             <!-- Starting buttons -->
-            <div class="flex justify-evenly mt-5">
-              <a href="#" class="bg-green-500 text-gray-100 py-2 px-4 rounded"
+            <div class="flex justify-evenly mt-5 lg:justify-start lg:mt-10">
+              <a
+                href="#"
+                class="bg-green-500 text-gray-100 py-2 px-4 rounded lg:mr-12"
                 >Hire us</a
               >
               <a
                 href="#"
-                class="bg-primary-100 text-secondary-100 py-2 px-4 rounded"
+                class="bg-primary-100 text-secondary-100 py-2 px-4 rounded lg:ml-10"
                 >Why choose us?</a
               >
             </div>
@@ -76,39 +82,48 @@
           </div>
         </div>
         <!-- 10 years experience -->
-        <div>
-          <h2 class="mt-10 text-lg p-4 text-center text-gray-900 font-bold">
+        <div class="lg:mt-24">
+          <h2
+            class="mt-10 text-lg p-4 text-center text-gray-900 font-bold lg:mt-24 lg:text-3xl lg:font-light lg:text-gray-800"
+          >
             Over 10+ years of teaching
             <span class="text-green-500">experience</span> in Learning Science
             and Curriculum Refinement
           </h2>
           <!--  experience data overall div -->
-          <div>
+          <div
+            class="lg:flex lg:w-screen lg:justify-evenly lg:mt-12 lg:items-center"
+          >
             <!-- campus numbers div -->
-            <div class="flex p-4 justify-evenly">
-              <div>
+            <div
+              class="flex p-4 justify-evenly lg:flex-col lg:border-gray-200 lg:border-r-2 lg:px-32"
+            >
+              <div class="">
                 <h2 class="text-gray-800 text-xl font-bold">Campuses</h2>
                 <p>1000+</p>
               </div>
               <div>
-                <h2 class="text-gray-800 text-xl font-bold">Students</h2>
+                <h2 class="text-gray-800 text-xl font-bold lg:mt-10">
+                  Students
+                </h2>
                 <p>5 Million+</p>
               </div>
               <div>
-                <h2 class="text-gray-800 text-xl font-bold">Alumni</h2>
+                <h2 class="text-gray-800 text-xl font-bold lg:mt-10">Alumni</h2>
                 <p>4562</p>
               </div>
             </div>
             <!-- Learn more div -->
             <div>
-              <p class="mt-5 pr-6 pl-6 text-justify">
-                We strive for teaching our students the most up-to-date
-                programming technologies through effective methods. Our dynamic
-                curriculum has been refined and optimized over the last ten
-                years by our founding members-a team of seasoned software
+              <p class="mt-5 pr-6 pl-6 text-justify lg:text-center lg:text-xl">
+                We strive for teaching our students the most up-to-date<br />
+                programming technologies through effective methods. Our
+                dynamic<br />
+                curriculum has been refined and optimized over the last ten<br />
+                years by our founding members-a team of seasoned software<br />
                 developers and tech executives.
               </p>
-              <div class="mt-5 text-center">
+              <div class="mt-5 text-center lg:mt-10">
                 <a
                   href="#"
                   class="bg-primary-100 text-secondary-100 py-2 px-4 rounded"
@@ -121,11 +136,15 @@
         </div>
         <!-- What we offer -->
         <div>
-          <h2 class="text-gray-800 text-2xl font-bold mt-10 text-center">
-            Courses we <span class="text-green-500">Offer</span>
+          <h2
+            class="text-gray-800 text-2xl font-bold mt-10 text-center lg:text-4xl lg:font-light lg:mt-24"
+          >
+            Courses we <span class="text-green-500 lg:font-bold">Offer</span>
           </h2>
           <!-- Courses -->
-          <div class="grid grid-cols-2 gap-2 mt-10 ml-2 mr-2">
+          <div
+            class="grid grid-cols-2 gap-2 mt-10 ml-2 mr-2 lg:grid-cols-4 lg:gap-10 lg:ml-20 lg:mr-20"
+          >
             <!-- Course 1 -->
             <div
               class="border-gray-200 border-2 p-6 flex flex-col justify-center items-center hover:shadow-md"
@@ -180,30 +199,42 @@
         <!-- 10 years exp complted -->
         <!-- Bootcamps -->
         <div>
-          <h2 class="mt-10 text-xl p-4 text-center text-gray-900 font-bold">
+          <h2
+            class="mt-10 text-xl p-4 text-center text-gray-900 font-bold lg:text-4xl lg:font-light lg:mt-40"
+          >
             Join our all new Onsite and Online
-            <span class="text-green-500">coding</span>
+            <span class="text-green-500 lg:font-bold">Coding</span>
             bootcamps
           </h2>
           <!-- Online bootcamp -->
-          <div class="mt-10 border-gray-200 border-2 p-4">
-            <div class="">
+          <div
+            class="mt-10 border-gray-200 border-2 p-4 lg:flex lg:border-none lg:justify-evenly lg:items-center lg:w-screen lg:p-10"
+          >
+            <div class="lg:h-full lg:justify-end lg:w-full">
               <img
                 src="assets/online_bootcamp_splash.jpg"
                 alt="online bootcamp"
                 class="mx-auto"
               />
             </div>
-            <div>
-              <h2 class="text-gray-900 font-bold text-xl text-center mt-4">
+            <div class="flex flex-col lg:p-20 justify-start">
+              <h2
+                class="text-gray-900 font-bold text-xl text-center mt-4 lg:text-4xl"
+              >
                 Online Coding Bootcamp
               </h2>
-              <p class="">
+              <p class="pt-4 lg:mt-12 lg:text-lg">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
                 molestiae inventore quos rerum totam, vero deleniti cum magnam
                 iste culpa, non recusandae. Deserunt impedit fugiat minima velit
                 sunt beatae incidunt enim laborum modi, aut ex assumenda
                 expedita atque quia qui?
+              </p>
+              <p class=" mt-4 lg:text-lg">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Temporibus maxime quae amet ducimus nam fugit ipsa, quis tempore
+                necessitatibus vel laborum, recusandae obcaecati! Consequatur
+                sed non quo atque vel sint harum veritatis rerum
               </p>
 
               <div class="mt-5 mb-2 text-center">
@@ -216,19 +247,30 @@
             </div>
           </div>
           <!-- Onsite bootcamp -->
-          <div class="mt-10 border-gray-200 border-2 p-4">
-            <div class="">
+          <div
+            class="mt-10 border-gray-200 border-2 p-4 lg:flex lg:flex-row-reverse lg:border-none lg:justify-evenly lg:items-center lg:w-screen lg:p-10"
+          >
+            <div class="lg:h-full lg:justify-end lg:w-full">
               <img
                 src="assets/onsite-bootcamp-splash.jpg"
                 alt="onsite bootcamp"
                 class="mx-auto"
               />
             </div>
-            <div>
-              <h2 class="text-gray-900 font-bold text-xl text-center mt-4">
+            <div class="lg:pr-20 lg:pl-20">
+              <h2
+                class="text-gray-900 font-bold text-xl text-center mt-4 lg:text-4xl"
+              >
                 Onsite Coding Bootcamp
               </h2>
-              <p class="pt-4">
+              <p class="pt-4 lg:text-lg">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+                molestiae inventore quos rerum totam, vero deleniti cum magnam
+                iste culpa, non recusandae. Deserunt impedit fugiat minima velit
+                sunt beatae incidunt enim laborum modi, aut ex assumenda
+                expedita atque quia qui?
+              </p>
+              <p class="mt-4 lg:text-lg">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
                 molestiae inventore quos rerum totam, vero deleniti cum magnam
                 iste culpa, non recusandae. Deserunt impedit fugiat minima velit
@@ -254,11 +296,15 @@
           <img src="assets/companies.png" alt="companies" class="mx-auto" />
         </div>
         <!-- Word from our students -->
-        <div class="mt-10">
-          <h2 class="text-center text-xl font-bold p-4">
+        <div class="mt-10 lg:mt-40">
+          <h2
+            class="text-center text-xl font-bold p-4 lg:text-4xl lg:font-light"
+          >
             A word from our <span class="text-green-500">students</span>
           </h2>
+          <div class="lg:mt-10 lg:grid lg:grid-cols-3 lg:gap-10 lg:ml-10">
           <!-- person1 -->
+          
           <div class="border-2 border-gray-200 m-2 p-6 text-center shadow">
             <h2 class="text-gray-900 text-xl font-bold tracking-wider">
               Andrei Negi
